@@ -1,0 +1,15 @@
+<h1>Main#show</h1>
+<p>Find me in app/views/main/show.html.erb</p>
+
+<h1><%=@search_term%></h1>
+
+
+
+<% for track in @itunes do%>
+  <h2>Track Name: <%= track['trackName']%></h2>
+  <h2>Artist Name: <%=track['artistName']%></h2>
+  <img src="<%=track['artworkUrl100']%>">
+
+<%end%>
+
+

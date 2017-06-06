@@ -1,0 +1,9 @@
+<h1>Main#index</h1>
+<p>Find me in app/views/main/index.html.erb</p>
+
+<h2>Search iTunes</h2>
+
+<%=form_for(:term, :url => :show) do |t| %>
+    <%= t.text_field :search, placeholder: "Search here"%>
+    <%= t.submit "Search" %>
+<%end%>
